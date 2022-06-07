@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 使用body设置需要继承的样式 */
+/* 如果一个样式related to text, 那么它将会继承 */
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 10px solid #1098ad;
+  position: relative;
+}
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1089ad;
+  border-bottom: 5px solid #1089ad;
+  padding: 50px 0;
+}
+
+
+h1, h2, h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+}
+
+/* become a 'h1' is not because its size, it's sementics */
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul, ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+#author {
+  font-style: italic;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ul {
+  list-style: none;
+} */
+
+.related {
+  list-style: none;
+}
+
+/* if r & g & b have the same value, its actually is white to black */
+
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+li:nth-child(odd) {
+  /* color: red; */
+}
+
+/* article p:last-child {
+  color: red;
+} */
+
+/* Styling links */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+/* LVHA */
+
+/* Resolving conflicts */
+/* #copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green !important;
+} */
+
+nav {
+  font-size: 16px;
+}
+
+.button-like {
+  font-size: 24px;
+
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 15px;
+
+  cursor: pointer;
+}
+
+/* 伪元素 */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h2::first-letter {
+  font-size: 80px;
+}
+
+/* 与h3相邻的p标签的第一行 */
+h3 + p::first-line {
+  /* color: red; */
+}
+
+h2 {
+  /* background-color: orange; */
+  position: relative;
+}
+
+h2::after {
+  content: 'TOP';
+  font-size: 16px;
+  background-color: #ffe70e;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -10px;
+  right: -25px;
+}
+/* 不要写过长的css选择器 */
