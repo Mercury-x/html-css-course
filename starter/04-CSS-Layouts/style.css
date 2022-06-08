@@ -348,13 +348,12 @@ footer {
   display: block;
 }
 
-.row {
+/* .row {
   display: flex;
   gap: 75px;
 }
 
 aside {
-  /* grow, shrink, basic */
   flex: 0 0 300px;
   align-self: flex-start;
 }
@@ -362,4 +361,28 @@ aside {
 article {
   flex: 0 0 825px;
   margin-bottom: 0;
+} */
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* grid-template-rows: auto 1fr auto; */
+  column-gap: 75px;
+  row-gap: 60px;
+}
+
+header {
+  grid-column: 1 / -1;
+}
+
+article {
+  margin-bottom: 0;
+}
+
+aside {
+  align-self: start;
+}
+
+footer {
+  grid-column: 1 / -1;
 }
